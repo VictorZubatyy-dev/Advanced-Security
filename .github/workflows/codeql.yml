@@ -68,7 +68,7 @@ jobs:
     # - if: ${{ (matrix.language == 'python'}}
       # name: Autobuild
       # uses: github/codeql-action/autobuild@v3
-    - if: ${{ (matrix.language == 'java-kotlin'}}
+    - if: ${{matrix.language == 'java-kotlin'}}
       name: Build Java
       run: |
         make boostrap
